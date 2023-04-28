@@ -5,9 +5,26 @@
 }
 
 body {
-  background-color: #2a2141;
+  /* background-color: #2a2141; */
+  background-color: #0f0d13;
 }
 
 #app {
   display: grid;
+  grid-template-areas:
+    "A B"
+    " A C";
+  gap: 32px;
+}
+
+#player-1 {
+  grid-area: A;
+}
+
+#player-2 {
+  grid-area: B;
+}
+
+#player-3 {
+  grid-area: C;
 }
